@@ -66,10 +66,10 @@ function Dashboard() {
   }, [phantoms, filters]);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
 
-      <section className="bg-gray-100">
+      <section className="bg-gray-100 flex-grow">
         <div className="grid grid-cols-12 py-8 px-14 gap-x-14">
           <div className="col-span-12 mb-10">
             <span className="font-black text-4xl">Dashboard</span>

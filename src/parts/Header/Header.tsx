@@ -8,7 +8,7 @@ import { Pill } from '../../components/Pill';
 
 function Header() {
   return (
-    <header className="w-screen bg-white border-b">
+    <header className="bg-white border-b">
       <div className="grid grid-cols-12 p-4 max-w-6xl m-auto items-center">
         <div className="col-span-2 col-start-auto">
           <img src={phantom} alt="logo" />
