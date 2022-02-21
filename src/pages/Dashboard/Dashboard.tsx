@@ -68,30 +68,32 @@ function Dashboard() {
   }, [phantoms, filters]);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-100 ">
       <Header />
 
-      <section className="bg-gray-100 flex-grow">
-        <div className="grid grid-cols-12 py-8 px-14 gap-x-14">
-          <div className="col-span-12 mb-10">
-            <span className="font-black text-4xl">Dashboard</span>
-            <span className="text-2xl ml-3">4/5</span>
-          </div>
+      <div className="m-auto">
+        <section className="flex-grow">
+          <div className="grid grid-cols-12 py-8 px-14 mdlg:gap-x-14">
+            <div className="col-span-12 mb-10">
+              <span className="font-black text-4xl">Dashboard</span>
+              <span className="text-2xl ml-3">4/5</span>
+            </div>
 
-          <aside className="col-span-12 mdlg:col-span-4">
-            <PhantomFilters filters={filters} setFilters={handleFilterChange} />
-          </aside>
+            <aside className="col-span-12 mdlg:col-span-4">
+              <PhantomFilters filters={filters} setFilters={handleFilterChange} />
+            </aside>
 
-          <div className="col-span-12 mdlg:col-span-6">
-            <PhantomsList
-              phantoms={filteredPhantoms}
-              isInError={isInError}
-              isLoading={isLoading}
-              phantomActions={phantomActions}
-            />
+            <div className="col-span-12 mdlg:col-span-6">
+              <PhantomsList
+                phantoms={filteredPhantoms}
+                isInError={isInError}
+                isLoading={isLoading}
+                phantomActions={phantomActions}
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
