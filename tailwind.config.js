@@ -8,6 +8,9 @@ module.exports = {
         linkedin: '#0077b5',
         instagram: '#fcaf45',
       },
+      screens: {
+        mdlg: '880px',
+      },
     },
   },
   plugins: [],

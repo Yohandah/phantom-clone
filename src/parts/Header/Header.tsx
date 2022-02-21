@@ -10,11 +10,11 @@ function Header() {
   return (
     <header className="bg-white border-b">
       <div className="grid grid-cols-12 p-4 max-w-6xl m-auto items-center">
-        <div className="col-span-2 col-start-auto">
+        <div className="mdlg:col-span-2 col-start-auto col-span-12 mb-5 mdlg:mb-0 flex place-content-center">
           <img src={phantom} alt="logo" />
         </div>
 
-        <nav className="col-span-7 col-start-auto flex justify-center gap-8">
+        <nav className="mdlg:col-span-6 col-start-auto flex justify-center gap-8 col-span-12 mb-8 mdlg:mb-0 place-content-center">
           <HeaderItem isDropdown={true} isSelected={true}>
             Phantoms
           </HeaderItem>
@@ -25,7 +25,7 @@ function Header() {
 
           <HeaderExternalItem>Get Started</HeaderExternalItem>
         </nav>
-        <div className="col-span-3 col-start-auto h-5/6 flex items-center">
+        <div className="mdlg:col-span-4 col-start-auto h-5/6 flex items-center col-span-12 place-content-center">
           <Pill>12 days left</Pill>
 
           <div className="border border-gray-400 rounded-full flex">
