@@ -1,0 +1,14 @@
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": ".editorconfig",
+      "options": {
+        "parser": "yaml"
+      }
+    }
+  ]
+}

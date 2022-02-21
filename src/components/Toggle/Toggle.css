@@ -1,0 +1,19 @@
+input:checked ~ .dot {
+  @apply translate-x-full;
+}
+
+.label {
+  @apply flex items-center cursor-pointer;
+}
+
+.toggle-container {
+  @apply block bg-blue-200 w-10 h-6 rounded-full transition;
+}
+
+.toggle-container.checked {
+  @apply bg-secondary;
+}
+
+.dot {
+  @apply absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition;
+}

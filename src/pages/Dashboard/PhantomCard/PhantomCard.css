@@ -1,0 +1,7 @@
+.card {
+  @apply drop-shadow-sm rounded p-5 border border-gray-200 flex flex-col hover:drop-shadow-lg transition cursor-pointer;
+}
+
+.icon {
+  @apply rounded-md mr-2 h-8 w-8 flex items-center justify-center text-white;
+}
