@@ -40,7 +40,7 @@ export const PhantomFilters: FunctionComponent<PhantomFiltersProps> = ({ filters
             {filter.options.map((option) => (
               <div
                 key={option.text}
-                className={`ml-2 cursor-pointer ${
+                className={`ml-2 cursor-pointer select-none ${
                   option.isSelected ? 'text-primary' : 'text-black'
                 }`}
                 onClick={() => {
