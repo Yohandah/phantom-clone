@@ -14,13 +14,12 @@ export const Dropdown: FunctionComponent<DropdownProps> = ({ opened, actions }) 
     >
       {actions.map((action) => (
         <li key={action.text}>
-          <a
-            className="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
-            href="#"
+          <span
+            className="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 cursor-pointer"
             onClick={() => action.handle()}
           >
             {action.text}
-          </a>
+          </span>
         </li>
       ))}
     </ul>
