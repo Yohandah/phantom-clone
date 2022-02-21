@@ -27,7 +27,7 @@ export const PhantomsList: FunctionComponent<PhantomsListProps> = ({
       return <Loading />;
     } else if (!isInError && !!phantoms && phantoms.length > 0) {
       return (
-        <div className="max-w-lg flex flex-col gap-8">
+        <div className="max-w-full mdlg:max-w-lg flex flex-col gap-8">
           {phantoms?.map((phantom) => (
             <PhantomCard key={phantom.id} phantom={phantom} phantomActions={phantomActions} />
           ))}

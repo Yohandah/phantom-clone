@@ -30,10 +30,10 @@ export const PhantomFilters: FunctionComponent<PhantomFiltersProps> = ({ filters
     <div>
       <div className="searchbar">
         <FontAwesomeIcon className="text-gray-400 mr-4" icon={faSearch} />
-        <input className="focus-visible:outline-0" placeholder="Search" />
+        <input className="focus-visible:outline-0 min-w-0" placeholder="Search" />
       </div>
 
-      <div>
+      <div className="hidden mdlg:block">
         {filters.map((filter) => (
           <div key={filter.type} className="mb-5">
             <h4 className="font-black text-sm tracking-widest mb-3">{filter.text}</h4>
