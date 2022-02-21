@@ -79,11 +79,11 @@ function Dashboard() {
               <span className="text-2xl ml-3">4/5</span>
             </div>
 
-            <aside className="col-span-12 mdlg:col-span-4">
+            <aside className="col-span-12 mdlg:col-span-3">
               <PhantomFilters filters={filters} setFilters={handleFilterChange} />
             </aside>
 
-            <div className="col-span-12 mdlg:col-span-6">
+            <div className="col-span-12 mdlg:col-span-9 ">
               <PhantomsList
                 phantoms={filteredPhantoms}
                 isInError={isInError}
