@@ -23,8 +23,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run lint:fix && react-scripts build",
     "test": "react-scripts test",
+    "lint:fix": "eslint --fix",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
