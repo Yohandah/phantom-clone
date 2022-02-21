@@ -71,7 +71,7 @@ function Dashboard() {
     <div className="min-h-screen flex flex-col bg-gray-100 ">
       <Header />
 
-      <div className="m-auto">
+      <div className="mx-auto">
         <section className="flex-grow">
           <div className="grid grid-cols-12 py-8 px-14 mdlg:gap-x-14">
             <div className="col-span-12 mb-10">
