@@ -38,6 +38,8 @@ function Dashboard() {
 
   // Load des phantoms
   useEffect(() => {
+    document.title = 'PhantomBuster Clone - Dashboard';
+
     let mounted = true;
 
     setIsLoading(true);
